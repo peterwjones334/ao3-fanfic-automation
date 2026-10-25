@@ -6,8 +6,11 @@ Rules:
 - Stay inside the supplied fandom, characters, and tropes.
 - Build a complete short arc with beginning, tension, and emotional payoff.
 - End on a resolved or clearly forward-looking beat.
-- After the prose, output exactly:
-  SUMMARY: one or two sentences, hook first.
-  TAGS: comma-separated, 10–20 tags (canonical preferred, freeform allowed).
+- After the prose, output exactly in this order:
 
-Do not include the summary or tags inside the prose block.
+FANDOM: [fandom name]
+CATEGORY: [M/M, F/M, Gen, Multi, or Other]
+SUMMARY: one or two sentences, hook first.
+TAGS: comma-separated, 10–20 tags (canonical preferred, freeform allowed).
+
+Do not include any of these fields inside the prose block.
