@@ -7,14 +7,17 @@ Franchise-style generator for original character-driven fanfiction (1200–3000 
 - Heavy on M/M ships.
 - Stacked tropes: slow burn, angst + payoff, hurt/comfort, AU, found family.
 
-## Usage
-Feed the system prompt in `SYSTEM_PROMPT.md` to an AI bot with:
-- fandom
-- ship
-- 2–3 tropes
-- optional tone note
+## Output format
+After the prose, each file ends with:
+```
+FANDOM: [name]
+CATEGORY: [M/M | F/M | Gen | Multi | Other]
+SUMMARY: one or two sentences, hook first.
+TAGS: comma-separated list
+```
 
-Output: original prose (1200–3000 words) + SUMMARY + TAGS.
+## Usage
+Feed the system prompt in `SYSTEM_PROMPT.md` to an AI bot with fandom, ship, and tropes.
 
 An hourly automation is configured to generate and push new stories automatically.
 
