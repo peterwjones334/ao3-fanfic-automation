@@ -1,6 +1,6 @@
 # AO3 Fanfic Automation
 
-Franchise-style generator for original short (~200-word) character-driven fanfiction in high-volume AO3 spaces.
+Franchise-style generator for original character-driven fanfiction (1200–3000 words) in high-volume AO3 spaces.
 
 ## Focus
 - Large or rising fandoms: Harry Potter, My Hero Academia, Stranger Things, Haikyuu!!, 9-1-1, Heated Rivalry, etc.
@@ -14,8 +14,10 @@ Feed the system prompt in `SYSTEM_PROMPT.md` to an AI bot with:
 - 2–3 tropes
 - optional tone note
 
-Output: original prose (180–220 words) + SUMMARY + TAGS.
+Output: original prose (1200–3000 words) + SUMMARY + TAGS.
+
+An hourly automation is configured to generate and push new stories automatically.
 
 Samples are in `/samples`.
 
-All shorts are original; no canon text is reproduced.
+All stories are original; no canon text is reproduced.
