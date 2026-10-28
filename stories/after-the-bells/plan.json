@@ -1,0 +1,83 @@
+{
+  "series": "After the Bells",
+  "expected_count": 10,
+  "generation_status": "awaiting_original_schedule_and_universe_source",
+  "repository": "peterwjones334/ao3-fanfic-automation",
+  "delivery_directory": "stories/after-the-bells",
+  "publication_time": "09:00",
+  "publication_timezone": "Europe/London",
+  "approval": "each exact revision in local pipeline",
+  "direct_ao3_publishing": false,
+  "slots": [
+    {
+      "sequence": 1,
+      "work_id": "after-the-bells-01",
+      "markdown": "story-01.md",
+      "metadata": "story-01.json",
+      "status": "awaiting_generation"
+    },
+    {
+      "sequence": 2,
+      "work_id": "after-the-bells-02",
+      "markdown": "story-02.md",
+      "metadata": "story-02.json",
+      "status": "awaiting_generation"
+    },
+    {
+      "sequence": 3,
+      "work_id": "after-the-bells-03",
+      "markdown": "story-03.md",
+      "metadata": "story-03.json",
+      "status": "awaiting_generation"
+    },
+    {
+      "sequence": 4,
+      "work_id": "after-the-bells-04",
+      "markdown": "story-04.md",
+      "metadata": "story-04.json",
+      "status": "awaiting_generation"
+    },
+    {
+      "sequence": 5,
+      "work_id": "after-the-bells-05",
+      "markdown": "story-05.md",
+      "metadata": "story-05.json",
+      "status": "awaiting_generation"
+    },
+    {
+      "sequence": 6,
+      "work_id": "after-the-bells-06",
+      "markdown": "story-06.md",
+      "metadata": "story-06.json",
+      "status": "awaiting_generation"
+    },
+    {
+      "sequence": 7,
+      "work_id": "after-the-bells-07",
+      "markdown": "story-07.md",
+      "metadata": "story-07.json",
+      "status": "awaiting_generation"
+    },
+    {
+      "sequence": 8,
+      "work_id": "after-the-bells-08",
+      "markdown": "story-08.md",
+      "metadata": "story-08.json",
+      "status": "awaiting_generation"
+    },
+    {
+      "sequence": 9,
+      "work_id": "after-the-bells-09",
+      "markdown": "story-09.md",
+      "metadata": "story-09.json",
+      "status": "awaiting_generation"
+    },
+    {
+      "sequence": 10,
+      "work_id": "after-the-bells-10",
+      "markdown": "story-10.md",
+      "metadata": "story-10.json",
+      "status": "awaiting_generation"
+    }
+  ]
+}
