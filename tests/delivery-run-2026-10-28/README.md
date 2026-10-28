@@ -1,0 +1,5 @@
+# Test run: Dead Letter Office
+
+Manually requested 28 October 2026. AI-generated provisional draft, 2,908 whitespace-separated words including heading/end marker. Based only on the user's brief and named universe concepts; full source novels and continuity guide were unavailable. Ada Marr and this office's rules are provisional inventions requiring continuity review. No human prose edits made during generation. Readers are free to skip this automated work without any expectation to read, comment or engage.
+
+This isolated test does not consume or alter the ten scheduled production slots. Metadata author 'Unassigned — test draft' is a placeholder, and 2030-01-01 is a deliberately future test date, not a publication instruction. Rating, warnings, tags and summary are draft suggestions requiring review. The local isolated database accepted the pair; approval is pending. No approval, release or AO3 commands were invoked. This manually initiated GitHub delivery test does not verify retrieval of future scheduled ChatGPT outputs.
