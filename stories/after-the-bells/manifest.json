@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "series": "After the Bells",
+  "expected_count": 10,
+  "source_of_truth": "github",
+  "draft_status_authoritative": true,
+  "publication_approval": "local AO3 pipeline only",
+  "direct_ao3_publishing": false,
+  "slots": [
+    {
+      "sequence": 1,
+      "title": "Dead Letter Office",
+      "work_id": "after-the-bells-01",
+      "markdown": "story-01.md",
+      "metadata": "story-01.json",
+      "status": "planned",
+      "attempts": 0
+    },
+    {
+      "sequence": 2,
+      "title": "The White Pearl",
+      "work_id": "after-the-bells-02",
+      "markdown": "story-02.md",
+      "metadata": "story-02.json",
+      "status": "planned",
+      "attempts": 0
+    },
+    {
+      "sequence": 3,
+      "title": "The Man with Two Death Certificates",
+      "work_id": "after-the-bells-03",
+      "markdown": "story-03.md",
+      "metadata": "story-03.json",
+      "status": "planned",
+      "attempts": 0
+    },
+    {
+      "sequence": 4,
+      "title": "Aftercare",
+      "work_id": "after-the-bells-04",
+      "markdown": "story-04.md",
+      "metadata": "story-04.json",
+      "status": "planned",
+      "attempts": 0
+    },
+    {
+      "sequence": 5,
+      "title": "Gallows Market",
+      "work_id": "after-the-bells-05",
+      "markdown": "story-05.md",
+      "metadata": "story-05.json",
+      "status": "planned",
+      "attempts": 0
+    },
+    {
+      "sequence": 6,
+      "title": "The Chapel of the Unfinished",
+      "work_id": "after-the-bells-06",
+      "markdown": "story-06.md",
+      "metadata": "story-06.json",
+      "status": "planned",
+      "attempts": 0
+    },
+    {
+      "sequence": 7,
+      "title": "The House of Seven Doors",
+      "work_id": "after-the-bells-07",
+      "markdown": "story-07.md",
+      "metadata": "story-07.json",
+      "status": "planned",
+      "attempts": 0
+    },
+    {
+      "sequence": 8,
+      "title": "The Geography of Missing Towns",
+      "work_id": "after-the-bells-08",
+      "markdown": "story-08.md",
+      "metadata": "story-08.json",
+      "status": "planned",
+      "attempts": 0
+    },
+    {
+      "sequence": 9,
+      "title": "The Allfather's Last Lie",
+      "work_id": "after-the-bells-09",
+      "markdown": "story-09.md",
+      "metadata": "story-09.json",
+      "status": "planned",
+      "attempts": 0
+    },
+    {
+      "sequence": 10,
+      "title": "Tomorrow, Unclaimed",
+      "work_id": "after-the-bells-10",
+      "markdown": "story-10.md",
+      "metadata": "story-10.json",
+      "status": "planned",
+      "attempts": 0
+    }
+  ]
+}
