@@ -22,3 +22,23 @@ Partial deliveries can be ingested independently. The Release 5 campaign importe
 
 ## Activation status
 The delivery contract and importer are ready. Generation is awaiting the original source notes and schedule, not enabled with fabricated stories. The handoff monitor in Codex checks this chat's outbox for real generated pairs and posts them to GitHub. It does not create a second generation schedule.
+
+
+## Production register and concurrency (2026-10-28)
+`manifest.json` is the authoritative story queue. It fixes all ten titles, stable filenames and states: planned → generating → draft. The draft state means staged in GitHub, NOT editorial approval or publication. Local AO3 pipeline approval and publication audit remain in the private local database.
+
+A separate `integration/after_bells_queue.py` tool implements safe GitHub reservation using a unique random claim token and Git's fast-forward-only ref update. Concurrent claims conflict and retry; submissions require the matching claim token, a valid complete 2,000–5,000-word story and compatible JSON metadata. Both story files and the changed manifest are committed in one atomic ref update. Do NOT bypass this queue by updating manifest.json and a story file separately. Claims expire after two hours; an expired claim can be re-reserved, invalidating the original token. Failure can be safely released with its claim token; any content conflict requires manual reconciliation.
+
+First authenticate using a fine-grained token with Contents: write for this repository. Never commit the token:
+```sh
+export GH_TOKEN=...                     # supply privately through your shell or secret manager
+python integration/after_bells_queue.py claim
+# Save the JSON claim_token securely and generate exactly the claimed numbered story.
+python integration/after_bells_queue.py submit --sequence 1 --token "$CLAIM_TOKEN" --story /path/to/story-01.md --metadata /path/to/story-01.json
+python integration/after_bells_queue.py validate
+# On generation failure only:
+python integration/after_bells_queue.py release --sequence 1 --token "$CLAIM_TOKEN"
+```
+See the existing import instructions above for ingesting staged story pairs into the private local AO3 pipeline. GitHub Actions validates the register and completed pairs; it does not generate or publish stories. The ChatGPT scheduled automation has been corrected to Wednesday mornings from 2026-11-04, ten runs, and instructed to consult the GitHub register. However **the ChatGPT automation → GitHub commit is not yet independently verified end-to-end**. It must not mark a story delivered unless the full draft and metadata were committed. A prior manual automation run produced Story One in a task chat, but the available task result was truncated; the full text has not been independently verified or imported. The queue intentionally leaves it planned.
+
+Warning: this is a PUBLIC GitHub repository. All staged manuscripts are publicly visible, even while editorial approval is pending.
