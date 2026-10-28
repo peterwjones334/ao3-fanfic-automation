@@ -20,7 +20,6 @@
       "sha256": "67dbc558ae7733bd3408e4bffd5ba35db9c266d9c7ae8e92136a5ba15b7012ef",
       "source_test_path": "tests/delivery-run-2026-10-28",
       "editorial_blockers": [
-        "author is placeholder",
         "release date is placeholder"
       ]
     },

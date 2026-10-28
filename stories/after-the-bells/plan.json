@@ -125,5 +125,8 @@
   },
   "editorial_direction": "Complete independent narrative arcs, developed characters, distinctive horror and consequential endings; explore the aftermath of the apocalypse without repeating a world-ending catastrophe each week.",
   "production_register": "manifest.json",
-  "local_publication": "Separate human approval per revision; dates to be chosen locally. Generation dates are not publication approval."
+  "local_publication": "Separate human approval per revision; dates to be chosen locally. Generation dates are not publication approval.",
+  "author_byline": "Amanda-Automata",
+  "ao3_username_or_pseud": "Amanda_Girard",
+  "ao3_publication_approval": "per-revision human approval required; username/pseud is not authorisation to log in or publish"
 }
