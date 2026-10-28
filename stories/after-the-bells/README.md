@@ -3,7 +3,7 @@
 Destination: `peterwjones334/ao3-fanfic-automation`. This repository is PUBLIC: committed drafts are publicly readable. GitHub delivery is not AO3 publication.
 
 ## Producer contract
-Use the original After the Bells universe notes and ten-story schedule. These were not recoverable from the cached conversation on 28 October 2026; do not invent continuity or replace the schedule with the unrelated hourly fandom generator.
+Use the original After the Bells universe notes and ten-story schedule. The user supplied the schedule and briefs on 28 October 2026; see plan.json. The full continuity guide remains with the original ChatGPT producer. Do not invent continuity or replace the schedule with the unrelated hourly fandom generator.
 For each scheduled story, write prose only to `stories/after-the-bells/story-NN.md`, and pipeline Metadata JSON to `story-NN.json`. NN runs 01–10. Commit both together in one Git commit. Use deterministic paths and work IDs; before retrying, inspect existing files and compare content. Identical delivery is a no-op. Never overwrite an existing different story automatically: open a review branch/PR.
 Required JSON fields: work_id (after-the-bells-NN), title, author, chapter (1), chapter_title, release_date (YYYY-MM-DD), rating, warnings, fandoms, tags, summary, language (en), complete (true).
 Metadata must conform to the installed ao3_pipeline.models.Metadata schema. No approval fields belong in Metadata. Do not guess authorship, warnings, release dates or fandom.
@@ -21,7 +21,7 @@ Use `ao3-pipeline --db PATH show REVISION`, `preview REVISION --output FILE.html
 Partial deliveries can be ingested independently. The Release 5 campaign importer requires all ten entries, intended target account/pseud/collection and daily contiguous release dates; build its manifest locally when those values are known. Do not import an incomplete or demonstration campaign as the real anthology.
 
 ## Activation status
-The delivery contract and importer are ready. Generation is awaiting the original source notes and schedule, not enabled with fabricated stories. The handoff monitor in Codex checks this chat's outbox for real generated pairs and posts them to GitHub. It does not create a second generation schedule.
+The user confirms an existing ChatGPT schedule: Wednesdays around 08:00 Europe/London, 4 November 2026 through 6 January 2027, ten stories of 2,500–4,000 words. The handoff monitor checks the original Diagram reconstruction chat and this chat's outbox for completed outputs. Chat references may be inaccessible placeholders: delivery must report an actionable access gap rather than invent text or mark a story delivered. No second generation schedule is created. The source story text and metadata must be available before an atomic queue submission. Missing authorship or publication dates require user input; generation dates do not grant publication approval.
 
 
 ## Production register and concurrency (2026-10-28)
