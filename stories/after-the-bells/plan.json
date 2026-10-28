@@ -1,83 +1,129 @@
 {
   "series": "After the Bells",
   "expected_count": 10,
-  "generation_status": "awaiting_original_schedule_and_universe_source",
+  "generation_status": "scheduled_in_ChatGPT_per_user",
   "repository": "peterwjones334/ao3-fanfic-automation",
   "delivery_directory": "stories/after-the-bells",
-  "publication_time": "09:00",
-  "publication_timezone": "Europe/London",
   "approval": "each exact revision in local pipeline",
   "direct_ao3_publishing": false,
   "slots": [
     {
       "sequence": 1,
+      "title": "Dead Letter Office",
+      "principal_focus": "Letters from people not yet born",
+      "generation_date": "2026-11-04",
       "work_id": "after-the-bells-01",
       "markdown": "story-01.md",
-      "metadata": "story-01.json",
-      "status": "awaiting_generation"
+      "metadata": "story-01.json"
     },
     {
       "sequence": 2,
+      "title": "The White Pearl",
+      "principal_focus": "Maxim and the economics of hunger",
+      "generation_date": "2026-11-11",
       "work_id": "after-the-bells-02",
       "markdown": "story-02.md",
-      "metadata": "story-02.json",
-      "status": "awaiting_generation"
+      "metadata": "story-02.json"
     },
     {
       "sequence": 3,
+      "title": "The Man with Two Death Certificates",
+      "principal_focus": "Tom Arkwright's conflicting identities",
+      "generation_date": "2026-11-18",
       "work_id": "after-the-bells-03",
       "markdown": "story-03.md",
-      "metadata": "story-03.json",
-      "status": "awaiting_generation"
+      "metadata": "story-03.json"
     },
     {
       "sequence": 4,
+      "title": "Aftercare",
+      "principal_focus": "Lucy, Felix and reconstructed consciousness",
+      "generation_date": "2026-11-25",
       "work_id": "after-the-bells-04",
       "markdown": "story-04.md",
-      "metadata": "story-04.json",
-      "status": "awaiting_generation"
+      "metadata": "story-04.json"
     },
     {
       "sequence": 5,
+      "title": "Gallows Market",
+      "principal_focus": "Vera encounters a market for events that never happened",
+      "generation_date": "2026-12-02",
       "work_id": "after-the-bells-05",
       "markdown": "story-05.md",
-      "metadata": "story-05.json",
-      "status": "awaiting_generation"
+      "metadata": "story-05.json"
     },
     {
       "sequence": 6,
+      "title": "The Chapel of the Unfinished",
+      "principal_focus": "Salma and a surviving Cthulhu cult faction",
+      "generation_date": "2026-12-09",
       "work_id": "after-the-bells-06",
       "markdown": "story-06.md",
-      "metadata": "story-06.json",
-      "status": "awaiting_generation"
+      "metadata": "story-06.json"
     },
     {
       "sequence": 7,
+      "title": "The House of Seven Doors",
+      "principal_focus": "Charlotte and Alice confront the cost of growing up",
+      "generation_date": "2026-12-16",
       "work_id": "after-the-bells-07",
       "markdown": "story-07.md",
-      "metadata": "story-07.json",
-      "status": "awaiting_generation"
+      "metadata": "story-07.json"
     },
     {
       "sequence": 8,
+      "title": "The Geography of Missing Towns",
+      "principal_focus": "The Committee investigates an erased Welsh village",
+      "generation_date": "2026-12-23",
       "work_id": "after-the-bells-08",
       "markdown": "story-08.md",
-      "metadata": "story-08.json",
-      "status": "awaiting_generation"
+      "metadata": "story-08.json"
     },
     {
       "sequence": 9,
+      "title": "The Allfather's Last Lie",
+      "principal_focus": "Nell investigates a possible surviving intelligence",
+      "generation_date": "2026-12-30",
       "work_id": "after-the-bells-09",
       "markdown": "story-09.md",
-      "metadata": "story-09.json",
-      "status": "awaiting_generation"
+      "metadata": "story-09.json"
     },
     {
       "sequence": 10,
+      "title": "Tomorrow, Unclaimed",
+      "principal_focus": "A concluding story connecting the collection's conflicts",
+      "generation_date": "2027-01-06",
       "work_id": "after-the-bells-10",
       "markdown": "story-10.md",
-      "metadata": "story-10.json",
-      "status": "awaiting_generation"
+      "metadata": "story-10.json"
     }
-  ]
+  ],
+  "generation_schedule": {
+    "weekday": "Wednesday",
+    "time_approximate": "08:00",
+    "timezone": "Europe/London",
+    "first_date": "2026-11-04",
+    "final_date": "2027-01-06",
+    "runs": 10,
+    "word_count_min": 2500,
+    "word_count_max": 4000
+  },
+  "universe": {
+    "source_works": [
+      "The Machinery of Dead Gods",
+      "The Last Profit"
+    ],
+    "continuity_guide": "Held by existing ChatGPT producer; not independently retrieved here",
+    "topics": [
+      "established character relationships",
+      "Platform rules",
+      "Devourer",
+      "Dreamer",
+      "Ledger",
+      "consequences of the Six Bells"
+    ]
+  },
+  "editorial_direction": "Complete independent narrative arcs, developed characters, distinctive horror and consequential endings; explore the aftermath of the apocalypse without repeating a world-ending catastrophe each week.",
+  "production_register": "manifest.json",
+  "local_publication": "Separate human approval per revision; dates to be chosen locally. Generation dates are not publication approval."
 }
